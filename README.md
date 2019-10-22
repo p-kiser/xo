@@ -12,5 +12,5 @@ python3 xo.py
 Disable alpha beta pruning:
 
 ```
-python3 xo.py [--no-pruning]
+python3 xo.py --no-pruning
 ```
