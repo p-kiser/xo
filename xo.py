@@ -89,7 +89,7 @@ class Game:
             for j in range(3):
                 if self.board[i][j] == '.':
                     self.board[i][j] = 'O'
-                    (m, min_i, min_j) = self.min()
+                    (m, _, _) = self.min()
                     if m > maxv:
                        maxv = m
                        px = i
@@ -152,7 +152,7 @@ class Game:
             for j in range(3):
                 if self.board[i][j] == '.':
                     self.board[i][j] = 'X'
-                    (m, max_i, max_j) = self.max()
+                    (m, _, _) = self.max()
                     if m < minv:
                         minv = m
                         qx = i
@@ -183,7 +183,7 @@ class Game:
             for j in range(3):
                 if self.board[i][j] == '.':
                     self.board[i][j] = 'X'
-                    (m, max_i, max_j) = self.max_abp(alpha, beta)
+                    (m, _, _) = self.max_abp(alpha, beta)
                     if m < minv:
                         minv = m
                         qx = i
