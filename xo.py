@@ -249,7 +249,7 @@ class Game:
                 print("AI did a thing")
                 self.player_turn = 'X'
                 
-            #system(clear) #system(("clear", "cls")[name == 'nt'])
+            system(clear) #system(("clear", "cls")[name == 'nt'])
 
 def main():
     Game().play()
